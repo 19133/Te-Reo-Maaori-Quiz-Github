@@ -1,8 +1,3 @@
-#version 4
-#by kafi ashkir
-#purpose: Added the type of quiz component which asks the user if they want to play the multi choice mode, timed quiz mode, or the classic mode.
-# Added type of quiz component on 25/6/21
-
 import random
 
 def yes_no(question):
@@ -34,6 +29,9 @@ def level(question):
     elif response == "1" or response  == "one":
         response = "1"
         return response 
+
+    else:
+     ("Plese pick 1, 2 or 3. 1 is easy, 2 is normal, 3 is hard")
 
 
 def type_of_quiz(question):
@@ -73,9 +71,24 @@ if played_before == "3":
 
 # if no, prints the rules and says what it is
 elif played_before == "2":
-  print("no")
+  print("Thats awesome")
+  type_of_quizes = input ("There are 3 type of quizes, Multiple choice, timed, or classic . Which one would you like to play".lower() + "\n")
+
+  if type_of_quizes == "multi":
+    print("Thats awesome")
+    print("You will be given multiple choice and you will have to pick one")
+
+  if  type_of_quizes == "timed" or type_of_quizes == "time" or type_of_quizes == "timed quiz" :
+    print("Thats amazing")
+    print("You will be given a amount of time to answer questions")
+
+  if type_of_quizes == "classic":
+    print("Thats amazing")
+    print("You will be given a amount of time to answer questions")
+
 elif played_before == "1":
-  print("no")
+  print("Thats great")
+
 else:
   ("Plese pick 1, 2 or 3. 1 is easy, 2 is normal, 3 is hard")
 
@@ -83,8 +96,7 @@ else:
 quiztype = type_of_quiz ("There are 3 type of quizes, Multiple choice, timed, or classic . Which one would you like to play" + "\n")
 # if yes, program continues
 if quiztype == "multiple choice":
-  print("Thats amazing!")
-  print("You will be given multiple choice and you will have to pick one")
+  print("Thats You will be given multiple choice and you will have to pick one")
   
 
 # if no, prints the rules and says what it is

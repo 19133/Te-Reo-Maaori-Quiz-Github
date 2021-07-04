@@ -104,7 +104,7 @@ if played_before == "yes":
 elif played_before == "no":
   print("Thats ok")
   print("The Te Reo Maaori quiz is a program which tests and helps students enhance their Te Reo Maaori skill")
-  print("It has many easy and hard difficluties and differnt types of modes such as normal, multiple choice, or timed quesions")
+  print("It has many easy and hard difficulties and different types of modes such as normal, multiple choice, or timed quesions")
 
 # asks the user to say yes or no and repeats question
 else:
