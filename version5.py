@@ -83,8 +83,9 @@ def type_of_quiz(question):
       exit()
 
     else:
-      print("type normal, multiple, or timed")
-      print("Or type xxx to quit") 
+     print("Please type multi, timed, or classic")
+     print("Or type xxx to quit") 
+
 
 
 # Main routine
@@ -114,7 +115,7 @@ else:
 
 
 # asks user what difficulty they want to play, 1 is easy, 2 is moderate, 3 is hard
-played_before = quiz_difficulty (name + "what difficulty do you want to play"  " 1 is easy, 2 is normal, 3 is hard " + "\n")
+played_before = quiz_difficulty (name + " what difficulty do you want to play"  " 1 is easy, 2 is normal, 3 is hard " + "\n")
 
 # if 3, The student will be given hard questions
 if played_before == "3":
@@ -127,6 +128,7 @@ if played_before == "3":
       print("Thats amazing!")
       print("You will be given multiple choice and you will have to pick one")
       
+      
 
   # if timed, the user will have a certian amount of time to answer the question. 
   if quiztype == "timed":
@@ -134,13 +136,13 @@ if played_before == "3":
       print("You will be given a amount of time to answer questions")
 
   # if normal, the user will be asked questions normally. Normal means they will be asked to answer and there will be no timer nor multiple choices for the user to pick out of. 
-  if quiztype == "normal":
+  elif quiztype == "normal":
       print("Program continues")
 
   # else, the user will be asked to 
   else:
-    print("Please type multi, timed, or classic")
-    print("Or type xxx to quit") 
+     print("Please type multi, timed, or classic")
+     print("Or type xxx to quit") 
 
 
 # if 2, Then the student will be given moderate level questions
@@ -160,7 +162,7 @@ elif played_before == "2":
       print("You will be given a amount of time to answer questions")
 
   # if normal, the user will be asked questions normally. Normal means they will be asked to answer and there will be no timer nor multiple choices for the user to pick out of. 
-  if quiztype == "normal":
+  elif quiztype == "normal":
       print("Program continues")
 
   # else, the user will be asked to 
@@ -171,6 +173,7 @@ elif played_before == "2":
 # if 1, then user will be asked easy questions
 elif played_before == "1":
   print("Thats great")
+
   quiztype = type_of_quiz ("There are 3 type of quizes, Multiple choice, timed, or normal . Which one would you like to play" + "\n")
   # if multiple choice, the user will have a lot of answers to pick out of but only one of them is correct.
   if quiztype == "multiple choice":
@@ -179,7 +182,7 @@ elif played_before == "1":
       
 
   # if timed, the user will have a certian amount of time to answer the question. 
-  if quiztype == "timed":
+  elif quiztype == "timed":
       print("Thats amazing")
       print("You will be given a amount of time to answer questions")
 
